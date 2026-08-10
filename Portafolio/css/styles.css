@@ -1,0 +1,331 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #f4f7fb;
+    color: #1f2937;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    text-align: center;
+    padding: 70px 20px 50px;
+    background: linear-gradient(135deg, #172554, #2563eb, #06b6d4);
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+
+/* =========================
+   NAVEGACIÓN
+   ========================= */
+
+nav {
+    background: #111827;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #2563eb;
+}
+
+
+/* =========================
+   CONTENIDO PRINCIPAL
+   ========================= */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+section h2 {
+    color: #172554;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   INICIO
+   ========================= */
+
+#inicio {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#inicio h2 {
+    font-size: 2.5rem;
+    color: #2563eb;
+}
+
+#inicio p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+
+/* =========================
+   SOBRE MÍ
+   ========================= */
+
+#sobre-mi {
+    background: white;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+#sobre-mi p {
+    max-width: 800px;
+}
+
+
+/* =========================
+   HABILIDADES
+   ========================= */
+
+#habilidades {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#habilidades h2 {
+    width: 100%;
+}
+
+#habilidades article {
+    padding: 25px;
+    background: white;
+    border-radius: 14px;
+    border-top: 5px solid #06b6d4;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#habilidades article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.14);
+}
+
+#habilidades h3 {
+    color: #2563eb;
+}
+
+
+/* =========================
+   PROYECTOS
+   ========================= */
+
+#proyectos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#proyectos h2 {
+    width: 100%;
+}
+
+#proyectos article {
+    padding: 25px;
+    background: white;
+    border-radius: 14px;
+    border-left: 5px solid #2563eb;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#proyectos article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.14);
+}
+
+#proyectos h3 {
+    color: #172554;
+}
+
+
+/* =========================
+   FORMULARIO
+   ========================= */
+
+#contacto {
+    background: white;
+    border-radius: 16px;
+    margin: 30px 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 650px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    font-weight: bold;
+    color: #172554;
+}
+
+input,
+textarea {
+    padding: 13px;
+    font-size: 16px;
+    border: 2px solid #dbe3ef;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+button {
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #2563eb, #06b6d4);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.3);
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    text-align: center;
+    padding: 35px 20px;
+    background: #111827;
+    color: white;
+}
+
+
+/* =========================
+   TABLET
+   Desde 768px
+   ========================= */
+
+@media (min-width: 768px) {
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    #habilidades,
+    #proyectos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    #habilidades article,
+    #proyectos article {
+        flex: 1;
+        min-width: 200px;
+    }
+}
+
+
+/* =========================
+   ESCRITORIO
+   Desde 1024px
+   ========================= */
+
+@media (min-width: 1024px) {
+
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    #habilidades,
+    #proyectos {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    #habilidades article,
+    #proyectos article {
+        flex: 1;
+    }
+}
